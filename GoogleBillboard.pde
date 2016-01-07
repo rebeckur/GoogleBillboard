@@ -6,10 +6,10 @@ public void setup()
 	{
 		String digits = e.substring(i, i+10);
 	 	double dNum = Double.parseDouble(digits);
-	 	System.out.println("Is " + dNum + " prime? " + isPrime(dNum));
+	 	System.out.println("Is " + digits + " prime? " + isPrime(dNum));
 	 	if (isPrime(dNum))
 	 	{
-	 		System.out.println(dNum + " is prime.");
+	 		System.out.println(digits + " is prime.");
 	 		break;
 	 	}
 	}

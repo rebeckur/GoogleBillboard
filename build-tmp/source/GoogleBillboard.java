@@ -19,10 +19,10 @@ public void setup()
 {            
 	noLoop();
 	for (int i = 1; i < e.length()-9; i++)
-    {
+	{
 		String digits = e.substring(i, i+10);
 	 	double dNum = Double.parseDouble(digits);
-	 	System.out.println("Is " + dNum + " prime? " + isPrime(dNum));
+	 	System.out.println("Is " + digits + " prime? " + isPrime(dNum));
 	 	if (isPrime(dNum))
 	 	{
 	 		System.out.println(dNum + " is prime.");
@@ -36,11 +36,6 @@ public void draw()
 }  
 public boolean isPrime(double dNum)  
 {   
-    //to be finished later
-    /*if (dNum < 2)
-    {
-    	return false;
-    }*/
     for (double i = 2; i <= Math.sqrt(dNum); i++)
     {
     	if (dNum % i == 0)
